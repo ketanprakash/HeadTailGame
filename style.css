@@ -10,6 +10,10 @@ body{
   align-items: center;
 }
 
+.points{
+  font-size: 1.5em;
+}
+
 .coin-container{
   display: flex;
   margin: 20px;
@@ -31,4 +35,21 @@ body{
   margin: 20px;
   margin-top: 0px;
   font-size: 1.5em;
+}
+
+.start{
+  width: 60px;
+  height: 35px;
+  background: rgb(0, 0, 255);
+  border: 1px rgba(0, 0, 184, 0.87) solid;
+  border-radius: 4px;
+  color: white;
+  border: 0px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.start:hover{
+  background: rgba(0, 0, 184, 0.95);
 }

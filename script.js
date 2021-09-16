@@ -5,8 +5,10 @@ const pointsTally = document.querySelector('.points');
 const coins = document.querySelectorAll('.coin');
 const result = document.querySelector('.result');
 let points = 0;
+let tries = 0;
 
 startButton.addEventListener('click', (e) => {
+  tries++;
   for (i = 0; i < 3; i++){
     const r = Math.floor(Math.random() * 2);
     arr[i] = r;
@@ -17,6 +19,6 @@ startButton.addEventListener('click', (e) => {
   if (win === 1){
     points++;
   }
-  pointsTally.innerHTML = `Points: ${points}`;
+  pointsTally.innerHTML = `Tries: ${tries}, Points: ${points}`;
   win = 1;
 })
